@@ -1,4 +1,6 @@
 export const wrapper = document.querySelector('.wrapper');
+export const hints = document.createElement('div');
+export const levelSelection = document.createElement('form');
 
 export const mainPageData = {
   mainTitleText: '« English-Puzzle »',
@@ -7,4 +9,9 @@ export const mainPageData = {
   mainDescriptionTextThirdParagraph: `Rather, click on the button <strong>"Start Game"</strong> and, perhaps tomorrow, you will know English as your native language!`,
   mainControlStartButtonText: 'START GAME',
   mainControlStatisticsButtonText: 'STATISTICS'
+};
+
+export const gamePageData = {
+  gamePageMainButtonText: 'MAIN',
+  gamePageStatisticsButtonText: 'STATISTICS'
 };

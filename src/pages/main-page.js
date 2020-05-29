@@ -3,6 +3,8 @@ import {
   mainPageData
 } from '../constants';
 import { elementCreator } from '../components/element-creator';
+import { buttonHandler } from '../components/buttonHandler';
+import { createGamePage } from './game-page';
 
 export const createMainPage = () => {
   elementCreator('h1', 'main-title', mainPageData.mainTitleText, wrapper, 'main-title');
@@ -49,4 +51,7 @@ export const createMainPage = () => {
     'statistics-button'
   );
   wrapper.append(mainControl);
+
+  buttonHandler('start-game-button', createGamePage);
+  buttonHandler('statistics-button', '');
 };

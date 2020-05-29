@@ -36,7 +36,8 @@ body {
   padding-bottom: 40px;
 }
 
-.main-control {
+.main-control,
+.game-page-navigation {
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -55,14 +56,66 @@ body {
   text-align: center;
 }
 
+.game-page-navigation__main-button,
+.game-page-navigation__statistics-button {
+  width: 20%;
+  padding: 7px 0;
+  font-size: 22px;
+  font-weight: 700;
+  border: 2px solid #59595B;
+  border-radius: 15px;
+  outline: none;
+  text-align: center;
+}
+
 .main-control__start-game-button:hover,
-.main-control__statistics-button:hover {
+.main-control__statistics-button:hover,
+.game-page-navigation__main-button:hover,
+.game-page-navigation__statistics-button:hover {
   cursor: pointer;
   background: #a6a6a8;
 }
 
 .main-control__start-game-button:active,
-.main-control__statistics-button:active {
+.main-control__statistics-button:active,
+.game-page-navigation__main-button:active,
+.game-page-navigation__statistics-button:active {
   transform: scale(0.98, 0.98);
   transition: .3s;
+}
+
+.game-page__menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.game-page__level-selection {
+  width: 30%;
+}
+
+.game-page__hints {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.hint-button {
+  width: 17%;
+  text-align: center;
+  border: 1px solid #4bc01b;
+  padding: 2% 0;
+  border-radius: 7px;
+  background: #40a519;
+  color: #ffffff;
+}
+
+.hint-button:hover {
+  background: #4bc01b;
+  cursor: pointer;
+}
+
+.hint-button:active {
+  transform: scale(0.98, 0.98);
 }
