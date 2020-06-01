@@ -92,7 +92,7 @@ body {
 }
 
 .game-page__level-selection {
-  width: 26%;
+  width: 27%;
 }
 
 .game-page__level-selection span {
@@ -127,4 +127,51 @@ body {
 
 .hint-button:active {
   transform: scale(0.98, 0.98);
+}
+
+.game-page__translate {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.game-page__result-container {
+  width: 90%;
+  margin: 25px auto 0;
+  height: 50vh;
+}
+
+.game-page__task-line {
+  width: 90%;
+  margin: 20px auto;
+  height: 4vh;
+}
+
+.game-page__i-dont-know-button {
+  width: 20%;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #4bc01b;
+  border-radius: 10px;
+  padding: 12px;
+  background: #40a519;
+  color: #ffffff;
+}
+
+.game-page__i-dont-know-button:hover {
+  background: #4bc01b;
+  cursor: pointer;
+}
+
+.game-page__i-dont-know-button:active {
+  transform: scale(0.99, 0.99);
+}
+
+.result-container__string {
+  width: 100%;
+  height: 10%;
 }

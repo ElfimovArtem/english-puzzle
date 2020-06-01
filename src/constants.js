@@ -13,5 +13,7 @@ export const mainPageData = {
 
 export const gamePageData = {
   gamePageMainButtonText: 'MAIN',
-  gamePageStatisticsButtonText: 'STATISTICS'
+  gamePageStatisticsButtonText: 'STATISTICS',
+  inputLevelMax: 6,
+  inputPageMax: 60,
 };
