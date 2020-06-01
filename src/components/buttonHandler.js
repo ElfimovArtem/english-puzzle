@@ -1,4 +1,4 @@
-import { hints, wrapper } from '../constants';
+import { hints, wrapper, levelSelection } from '../constants';
 
 export const buttonHandler = (btnId, pageCreator) => {
   const selectedButton = document.getElementById(btnId);
@@ -10,11 +10,15 @@ export const buttonHandler = (btnId, pageCreator) => {
   });
 };
 
-export const clearHintBlock = () => {
+export const clearMenuBlock = () => {
   const mainBTN = document.getElementById('game-page__main-button');
   mainBTN.addEventListener('click', () => {
     while (hints.firstChild) {
-      hints.removeChild(hints.firstChild)
+      hints.removeChild(hints.firstChild);
+    }
+
+    while (levelSelection.firstChild) {
+      levelSelection.removeChild(levelSelection.firstChild);
     }
   });
 };

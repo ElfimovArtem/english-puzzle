@@ -1,6 +1,6 @@
-import { elementCreator } from '../components/element-creator';
+import { elementCreator, levelFormCreator } from '../components/element-creator';
 import { gamePageData, hints, wrapper, levelSelection } from '../constants';
-import { buttonHandler, clearHintBlock } from '../components/buttonHandler';
+import { buttonHandler, clearMenuBlock } from '../components/buttonHandler';
 import { createMainPage } from './main-page';
 import { hintButtonCreator } from '../components/hint-button-creator';
 
@@ -28,7 +28,8 @@ export const createGamePage = () => {
 
 
   levelSelection.classList.add('game-page__level-selection');
-
+  levelFormCreator('Level', '6');
+  levelFormCreator('Page', '60');
 
   hints.classList.add('game-page__hints');
   hintButtonCreator('hints__voice-button', 'fa-volume-up');
@@ -42,7 +43,7 @@ export const createGamePage = () => {
   wrapper.append(gamePageMenu);
 
   buttonHandler('game-page__main-button', createMainPage);
-  clearHintBlock();
+  clearMenuBlock();
   buttonHandler('game-page__statistics-button', '');
 };
 

@@ -92,7 +92,16 @@ body {
 }
 
 .game-page__level-selection {
-  width: 30%;
+  width: 26%;
+}
+
+.game-page__level-selection span {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.game-page__level-selection label:not(:last-child) {
+  margin-right: 10px;
 }
 
 .game-page__hints {
