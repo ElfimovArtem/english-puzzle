@@ -7,7 +7,13 @@ import { buttonHandler } from '../components/buttonHandler';
 import { createGamePage } from './game-page';
 
 export const createMainPage = () => {
-  elementCreator('h1', 'main-title', mainPageData.mainTitleText, wrapper, 'main-title');
+  elementCreator(
+    'h1',
+    'main-title',
+    mainPageData.mainTitleText,
+    wrapper,
+    'main-title'
+  );
 
   const mainDescription = document.createElement('p');
   mainDescription.classList.add('main-description');

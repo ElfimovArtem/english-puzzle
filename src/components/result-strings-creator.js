@@ -1,76 +1,16 @@
 import { elementCreator } from './element-creator';
+import { gamePageData } from '../constants';
 
 export const resultStringsCreator = () => {
   const resultContainer = document.getElementById('result-container');
 
-  elementCreator(
-    'div',
-    'result-container__string',
-    '1',
-    resultContainer,
-    'first-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '2',
-    resultContainer,
-    'second-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '3',
-    resultContainer,
-    'third-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '4',
-    resultContainer,
-    'forth-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '5',
-    resultContainer,
-    'fifth-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '6',
-    resultContainer,
-    'sixth-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '7',
-    resultContainer,
-    'seventh-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '8',
-    resultContainer,
-    'eighth-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '9',
-    resultContainer,
-    'ninth-string'
-  );
-  elementCreator(
-    'div',
-    'result-container__string',
-    '10',
-    resultContainer,
-    'tenth-string'
-  );
+  for (let lineCounter = 0; lineCounter < gamePageData.numberOfLines; lineCounter ++) {
+    elementCreator(
+      'div',
+      'result-container__string',
+      (lineCounter + 1),
+      resultContainer,
+      `${lineCounter + 1}-str`
+    );
+  }
 };

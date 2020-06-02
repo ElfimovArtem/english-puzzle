@@ -16,4 +16,8 @@ export const gamePageData = {
   gamePageStatisticsButtonText: 'STATISTICS',
   inputLevelMax: 6,
   inputPageMax: 60,
+  levelSelectionButtonText: 'SELECT',
+  gamePageIDontKnowText: `I don't know`,
+  numberOfLines: 10,
+  startScreenText: 'In order to start learning English, please select the level and page with which you want to start and then press the "SELECT" button. Good luck and have fun!'
 };

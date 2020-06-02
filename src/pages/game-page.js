@@ -3,7 +3,8 @@ import { gamePageData, hints, wrapper, levelSelection } from '../constants';
 import { buttonHandler, clearMenuBlock } from '../components/buttonHandler';
 import { createMainPage } from './main-page';
 import { hintButtonCreator } from '../components/hint-button-creator';
-import { resultStringsCreator } from '../components/result-strings-creator';
+import { selectButtonHandler } from '../components/select-button-handler';
+import { applicationStartScreen } from '../components/application-start-screen';
 
 export const createGamePage = () => {
 
@@ -29,8 +30,15 @@ export const createGamePage = () => {
 
 
   levelSelection.classList.add('game-page__level-selection');
-  levelFormCreator('Level', gamePageData.inputLevelMax);
-  levelFormCreator('Page', gamePageData.inputPageMax);
+  levelFormCreator('Level', gamePageData.inputLevelMax, 'level');
+  levelFormCreator('Page', gamePageData.inputPageMax, 'page');
+  elementCreator(
+    'div',
+    'level-selection__selection-button',
+    gamePageData.levelSelectionButtonText,
+    levelSelection,
+    'selection-button'
+  );
 
   hints.classList.add('game-page__hints');
   hintButtonCreator('hints__voice-button', 'fa-volume-up');
@@ -57,7 +65,7 @@ export const createGamePage = () => {
     wrapper,
     'result-container'
   );
-  resultStringsCreator();
+  applicationStartScreen();
   elementCreator(
     'div',
     'game-page__task-line',
@@ -68,7 +76,7 @@ export const createGamePage = () => {
   elementCreator(
     'div',
     'game-page__i-dont-know-button',
-    `I don't know`,
+    gamePageData.gamePageIDontKnowText,
     wrapper,
     'i-dont-know-button'
   );
@@ -76,5 +84,6 @@ export const createGamePage = () => {
   buttonHandler('game-page__main-button', createMainPage);
   clearMenuBlock();
   buttonHandler('game-page__statistics-button', '');
+  selectButtonHandler();
 };
 

@@ -1,15 +1,20 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
-  height: 100%;
   font-family: 'Roboto', sans-serif;
   user-select: none;
+  background-image: url("assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }
 
 .wrapper {
   margin: 0;
   padding: 40px;
+  color: #ffffff;
+  text-shadow: 2px 1px 1px #000000;
 }
 
 .main-title {
@@ -50,7 +55,7 @@ body {
   padding: 20px 0;
   font-size: 30px;
   font-weight: 900;
-  border: 2px solid #59595B;
+  border: 2px solid #7a0069;
   border-radius: 15px;
   outline: none;
   text-align: center;
@@ -62,7 +67,7 @@ body {
   padding: 7px 0;
   font-size: 22px;
   font-weight: 700;
-  border: 2px solid #59595B;
+  border: 2px solid #8e007a;
   border-radius: 15px;
   outline: none;
   text-align: center;
@@ -73,7 +78,7 @@ body {
 .game-page-navigation__main-button:hover,
 .game-page-navigation__statistics-button:hover {
   cursor: pointer;
-  background: #a6a6a8;
+  background: #950082;
 }
 
 .main-control__start-game-button:active,
@@ -89,10 +94,13 @@ body {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  align-items: center;
 }
 
 .game-page__level-selection {
-  width: 27%;
+  width: 40%;
+  display: flex;
+  align-items: center;
 }
 
 .game-page__level-selection span {
@@ -113,15 +121,15 @@ body {
 .hint-button {
   width: 17%;
   text-align: center;
-  border: 1px solid #4bc01b;
+  border: 1px solid #9c008a;
   padding: 2% 0;
   border-radius: 7px;
-  background: #40a519;
+  background: #950082;
   color: #ffffff;
 }
 
 .hint-button:hover {
-  background: #4bc01b;
+  background: #b300d0;
   cursor: pointer;
 }
 
@@ -146,24 +154,26 @@ body {
 }
 
 .game-page__task-line {
-  width: 90%;
+  width: 95%;
   margin: 20px auto;
   height: 4vh;
+  display: flex;
+  justify-content: center;
 }
 
 .game-page__i-dont-know-button {
   width: 20%;
   text-align: center;
   margin: 0 auto;
-  border: 1px solid #4bc01b;
+  border: 1px solid #9c008a;
   border-radius: 10px;
-  padding: 12px;
-  background: #40a519;
+  padding: 12px 0;
+  background: #950082;
   color: #ffffff;
 }
 
 .game-page__i-dont-know-button:hover {
-  background: #4bc01b;
+  background: #b300d0;
   cursor: pointer;
 }
 
@@ -174,4 +184,47 @@ body {
 .result-container__string {
   width: 100%;
   height: 10%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.level-selection__selection-button {
+  width: 27%;
+  text-align: center;
+  border: 1px solid #9c008a;
+  border-radius: 10px;
+  padding: 5px 0;
+  font-size: 14px;
+  margin-left: 5px;
+  background: #950082;
+}
+
+.level-selection__selection-button:hover {
+  background: #b300d0;
+  cursor: pointer;
+}
+
+.level-selection__selection-button:active {
+  transform: scale(0.99, 0.99);
+}
+
+.start-screen {
+  text-align: center;
+  font-size: 36px;
+  line-height: 3;
+}
+
+.task-line__word {
+  padding: 0 5px;
+  line-height: 2;
+  font-size: 18px;
+  border: 1px solid #9c008a;
+  background: rgba(149, 0, 130, 0.43);
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.task-line__word:hover {
+  background: rgba(179, 0, 208, 0.4);
+  cursor: pointer;
 }

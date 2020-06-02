@@ -8,7 +8,7 @@ export const elementCreator = (tagName, className, innerText, parent, idTitle) =
   parent.append(newElement);
 };
 
-export const levelFormCreator = (labelText, max) => {
+export const levelFormCreator = (labelText, max, id) => {
   const levelLabel = document.createElement('label');
   const levelLabelText = document.createElement('span');
   levelLabelText.innerHTML = labelText;
@@ -17,6 +17,7 @@ export const levelFormCreator = (labelText, max) => {
   levelLabelInput.setAttribute('min', '1');
   levelLabelInput.setAttribute('max', max);
   levelLabelInput.setAttribute('value', '1');
+  levelLabelInput.setAttribute('id', id);
   levelLabel.append(levelLabelText);
   levelLabel.append(levelLabelInput);
   levelSelection.append(levelLabel);
