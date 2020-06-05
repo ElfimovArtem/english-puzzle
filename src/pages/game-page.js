@@ -73,13 +73,23 @@ export const createGamePage = () => {
     wrapper,
     'task-line'
   );
+  const gamePageControlButtons = document.createElement('div');
+  gamePageControlButtons.classList.add('game-page__control-buttons');
   elementCreator(
     'div',
     'game-page__i-dont-know-button',
     gamePageData.gamePageIDontKnowText,
-    wrapper,
+    gamePageControlButtons,
     'i-dont-know-button'
   );
+  elementCreator(
+    'div',
+    'game-page__check-button',
+    gamePageData.gamePageCheckText,
+    gamePageControlButtons,
+    'check-button'
+  );
+  wrapper.append(gamePageControlButtons);
 
   buttonHandler('game-page__main-button', createMainPage);
   clearMenuBlock();

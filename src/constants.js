@@ -18,6 +18,13 @@ export const gamePageData = {
   inputPageMax: 60,
   levelSelectionButtonText: 'SELECT',
   gamePageIDontKnowText: `I don't know`,
+  gamePageCheckText: 'Check',
   numberOfLines: 10,
   startScreenText: 'In order to start learning English, please select the level and page with which you want to start and then press the "SELECT" button. Good luck and have fun!'
 };
+
+export const extremeValuePage = 30;
+export const numberOfLinesMin = 10;
+export const numberOfLinesMax = 20;
+export let dataStringNumber = 0;
+export const pagePassed = 'Congratulations! You have completed all the tasks on this page - go to another! (Select another page and press "SELECT")';
