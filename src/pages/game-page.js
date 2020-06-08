@@ -54,7 +54,7 @@ export const createGamePage = () => {
   elementCreator(
     'div',
     'game-page__translate',
-    'Здесь будет перевод предложения...',
+    '',
     wrapper,
     'translate'
   );

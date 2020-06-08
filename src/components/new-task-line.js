@@ -1,6 +1,7 @@
 import { elementCreator } from './element-creator';
 import { taskLineHandler } from './task-line-handler';
 import { pagePassed } from '../constants';
+import { translateNewTaskLine } from './translate-new-task-line';
 
 export const newTaskLine = (arr, dataStringNumber) => {
   const resultContainer = document.getElementById('result-container');
@@ -26,6 +27,7 @@ export const newTaskLine = (arr, dataStringNumber) => {
       );
     });
 
+    translateNewTaskLine(arr, dataStringNumber);
     taskLineHandler((dataStringNumber + 1), arrayFromNewString, dataStringNumber, arr);
   } else {
     resultContainer.classList.add('start-screen');

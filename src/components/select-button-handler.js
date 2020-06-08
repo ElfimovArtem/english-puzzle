@@ -5,6 +5,7 @@ import { extremeValuePage } from '../constants';
 export const selectButtonHandler = () => {
   const selectButton = document.getElementById('selection-button');
   const resultContainer = document.getElementById('result-container');
+  const thisTaskLine = document.getElementById('task-line');
   let levelReceivedData;
   let pageReceivedData;
 
@@ -24,6 +25,15 @@ export const selectButtonHandler = () => {
       levelReceivedData = levelInputValue;
       pageReceivedData = pageInputValue;
       getListWords(levelInputValue - 1, numberOfPageInputValue);
+
+      while (thisTaskLine.firstChild) {
+        thisTaskLine.removeChild(thisTaskLine.firstChild);
+      }
+
+      while (resultContainer.firstChild) {
+        resultContainer.removeChild(resultContainer.firstChild);
+      }
+      resultStringsCreator();
     }
   });
 };
