@@ -1,0 +1,72 @@
+@media (min-width: 750px) and (max-width: 1000px) {
+
+  .main-title {
+    font-size: 35px;
+    padding-top: 10px;
+  }
+
+  .main-description {
+    font-size: 21px;
+    padding-top: 25px;
+  }
+
+  .main-control__start-game-button,
+  .main-control__statistics-button {
+    padding: 15px 0;
+    font-size: 27px;
+  }
+
+  .game-page-navigation__main-button,
+  .game-page-navigation__statistics-button,
+  .statistics-page-navigation__main-button,
+  .statistics-page-navigation__start-game-button {
+    width: 27%;
+    font-size: 20px;
+  }
+
+  .game-page__level-selection {
+    width: 47%;
+  }
+
+  .game-page__hints {
+    width: 23%;
+  }
+
+  .game-page__menu {
+    margin-top: 20px;
+  }
+
+  .start-screen {
+    font-size: 32px;
+  }
+
+  .game-page__result-container {
+    height: 47vh;
+    margin: 20px auto 0;
+  }
+
+  .game-page__translate {
+    font-size: 22px;
+    padding-top: 20px;
+  }
+
+  .game-page__task-line {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .task-line__word {
+    margin: 5px;
+    font-size: 16px;
+  }
+
+  .result-container__string--word {
+    padding: 0 5px;
+  }
+
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+
+}

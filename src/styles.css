@@ -239,7 +239,7 @@ body {
 
 .task-line__word {
   padding: 0 5px;
-  line-height: 2;
+  line-height: 1.7;
   font-size: 18px;
   border: 1px solid #9c008a;
   background: rgba(149, 0, 130, 0.43);

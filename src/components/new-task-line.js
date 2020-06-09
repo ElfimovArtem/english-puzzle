@@ -7,6 +7,9 @@ import { addSound } from './add-sound';
 export const newTaskLine = (arr, dataStringNumber) => {
   const resultContainer = document.getElementById('result-container');
   const voiceBtn = document.getElementById('voice');
+  const translateStr = document.getElementById('translate');
+  const checkBtn = document.getElementById('check-button');
+  const iDontKnowBtn = document.getElementById('i-dont-know-button');
 
   if (arr[dataStringNumber]) {
     const thisTaskLine = document.getElementById('task-line');
@@ -34,6 +37,9 @@ export const newTaskLine = (arr, dataStringNumber) => {
   } else {
     resultContainer.classList.add('start-screen');
     resultContainer.innerHTML = pagePassed;
+    translateStr.innerHTML = '';
+    checkBtn.onclick = null;
+    iDontKnowBtn.onclick = null;
 
     while (voiceBtn.children[1]) {
       voiceBtn.children[1].remove();
