@@ -5,6 +5,7 @@ import {
 import { elementCreator } from '../components/element-creator';
 import { buttonHandler } from '../components/buttonHandler';
 import { createGamePage } from './game-page';
+import { createStatisticsPage } from './statistics-page';
 
 export const createMainPage = () => {
   elementCreator(
@@ -59,5 +60,5 @@ export const createMainPage = () => {
   wrapper.append(mainControl);
 
   buttonHandler('start-game-button', createGamePage);
-  buttonHandler('statistics-button', '');
+  buttonHandler('statistics-button', createStatisticsPage);
 };

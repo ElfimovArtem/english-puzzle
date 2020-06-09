@@ -23,6 +23,12 @@ export const gamePageData = {
   startScreenText: 'In order to start learning English, please select the level and page with which you want to start and then press the "SELECT" button. Good luck and have fun!'
 };
 
+export const statisticsPageData = {
+  mainButtonText: 'MAIN',
+  gameButtonText: 'START GAME',
+  descriptionText: 'Здесь должна быть статистика... но это не точно.. '
+};
+
 export const extremeValuePage = 30;
 export const numberOfLinesMin = 10;
 export const numberOfLinesMax = 20;

@@ -1,10 +1,11 @@
 import { elementCreator, levelFormCreator } from '../components/element-creator';
 import { gamePageData, hints, wrapper, levelSelection } from '../constants';
-import { buttonHandler, clearMenuBlock } from '../components/buttonHandler';
+import { buttonHandler  } from '../components/buttonHandler';
 import { createMainPage } from './main-page';
 import { hintButtonCreator } from '../components/hint-button-creator';
 import { selectButtonHandler } from '../components/select-button-handler';
 import { applicationStartScreen } from '../components/application-start-screen';
+import { createStatisticsPage } from './statistics-page';
 
 export const createGamePage = () => {
 
@@ -92,8 +93,7 @@ export const createGamePage = () => {
   wrapper.append(gamePageControlButtons);
 
   buttonHandler('game-page__main-button', createMainPage);
-  clearMenuBlock();
-  buttonHandler('game-page__statistics-button', '');
+  buttonHandler('game-page__statistics-button', createStatisticsPage);
   selectButtonHandler();
 };
 

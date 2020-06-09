@@ -42,7 +42,8 @@ body {
 }
 
 .main-control,
-.game-page-navigation {
+.game-page-navigation,
+.statistics-page-navigation {
   width: 75%;
   margin: 0 auto;
   display: flex;
@@ -62,7 +63,9 @@ body {
 }
 
 .game-page-navigation__main-button,
-.game-page-navigation__statistics-button {
+.game-page-navigation__statistics-button,
+.statistics-page-navigation__main-button,
+.statistics-page-navigation__start-game-button {
   width: 20%;
   padding: 7px 0;
   font-size: 22px;
@@ -76,7 +79,9 @@ body {
 .main-control__start-game-button:hover,
 .main-control__statistics-button:hover,
 .game-page-navigation__main-button:hover,
-.game-page-navigation__statistics-button:hover {
+.game-page-navigation__statistics-button:hover,
+.statistics-page-navigation__main-button:hover,
+.statistics-page-navigation__start-game-button:hover {
   cursor: pointer;
   background: #950082;
 }
@@ -84,7 +89,9 @@ body {
 .main-control__start-game-button:active,
 .main-control__statistics-button:active,
 .game-page-navigation__main-button:active,
-.game-page-navigation__statistics-button:active {
+.game-page-navigation__statistics-button:active,
+.statistics-page-navigation__main-button:active,
+.statistics-page-navigation__start-game-button:active {
   transform: scale(0.98, 0.98);
   transition: .3s;
 }
@@ -222,6 +229,12 @@ body {
   text-align: center;
   font-size: 36px;
   line-height: 3;
+}
+
+.statistics-page-description {
+  padding-top: 270px;
+  text-align: center;
+  font-size: 35px;
 }
 
 .task-line__word {
