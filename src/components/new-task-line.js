@@ -2,6 +2,7 @@ import { elementCreator } from './element-creator';
 import { taskLineHandler } from './task-line-handler';
 import { pagePassed } from '../constants';
 import { translateNewTaskLine } from './translate-new-task-line';
+import { addSound } from './add-sound';
 
 export const newTaskLine = (arr, dataStringNumber) => {
   const resultContainer = document.getElementById('result-container');
@@ -13,6 +14,8 @@ export const newTaskLine = (arr, dataStringNumber) => {
     const taskLineArrayRandomly = newString.split(' ').sort(() => {
       return Math.random() - 0.5;
     });
+
+
 
     console.log(arrayFromNewString);
     console.log(taskLineArrayRandomly);
@@ -27,6 +30,7 @@ export const newTaskLine = (arr, dataStringNumber) => {
       );
     });
 
+    addSound(arr, dataStringNumber);
     translateNewTaskLine(arr, dataStringNumber);
     taskLineHandler((dataStringNumber + 1), arrayFromNewString, dataStringNumber, arr);
   } else {

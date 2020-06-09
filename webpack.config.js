@@ -36,6 +36,12 @@ module.exports = {
         use: {
           loader: 'file-loader',
         }
+      }, {
+        test: /\.(mp3)$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'file-loader',
+        }
       },
     ]
   }

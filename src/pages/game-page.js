@@ -41,10 +41,10 @@ export const createGamePage = () => {
   );
 
   hints.classList.add('game-page__hints');
-  hintButtonCreator('hints__voice-button', 'fa-volume-up');
-  hintButtonCreator('hints__file-button', 'fa-file-text-o');
-  hintButtonCreator('hints__music-button', 'fa-music');
-  hintButtonCreator('hints__picture-button', 'fa-picture-o');
+  hintButtonCreator('hints__voice-button', 'fa-volume-up', 'voice');
+  hintButtonCreator('hints__file-button', 'fa-file-text-o', 'file');
+  hintButtonCreator('hints__music-button', 'fa-music', 'music');
+  hintButtonCreator('hints__picture-button', 'fa-picture-o', 'picture');
 
   gamePageMenu.append(levelSelection);
   gamePageMenu.append(hints);

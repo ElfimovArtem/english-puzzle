@@ -11,7 +11,6 @@ export const getListWords = (level, page) => {
   fetch(wordsURL)
     .then((res) => res.json())
     .then(wordsData => {
-
       const thisPageInputValue = document.getElementById('page').value;
       const thisPageData = [];
       let startPosition;
