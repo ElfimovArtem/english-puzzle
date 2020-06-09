@@ -10,7 +10,9 @@ export const addSound = (data, stringNumber) => {
   }
 
   voiceBtn.onclick = () => {
-    voiceBtn.children[1].play();
+    if (voiceBtn.children[1]) {
+      voiceBtn.children[1].play();
+    }
   };
 
   audio.append(audioSrc);

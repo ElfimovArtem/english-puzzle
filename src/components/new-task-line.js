@@ -6,6 +6,7 @@ import { addSound } from './add-sound';
 
 export const newTaskLine = (arr, dataStringNumber) => {
   const resultContainer = document.getElementById('result-container');
+  const voiceBtn = document.getElementById('voice');
 
   if (arr[dataStringNumber]) {
     const thisTaskLine = document.getElementById('task-line');
@@ -14,9 +15,6 @@ export const newTaskLine = (arr, dataStringNumber) => {
     const taskLineArrayRandomly = newString.split(' ').sort(() => {
       return Math.random() - 0.5;
     });
-
-
-
     console.log(arrayFromNewString);
     console.log(taskLineArrayRandomly);
 
@@ -36,5 +34,20 @@ export const newTaskLine = (arr, dataStringNumber) => {
   } else {
     resultContainer.classList.add('start-screen');
     resultContainer.innerHTML = pagePassed;
+
+    while (voiceBtn.children[1]) {
+      voiceBtn.children[1].remove();
+    }
+
+    const pageInput = document.getElementById('page');
+    const levelInput = document.getElementById('level');
+    let pageNum = Number.parseInt(pageInput.value);
+    let levelNum = Number.parseInt(levelInput.value);
+    if (pageNum < 60) {
+      pageInput.value = pageNum += 1;
+    } else {
+      levelInput.value = levelNum += 1;
+      pageInput.value = 1;
+    }
   }
 };
