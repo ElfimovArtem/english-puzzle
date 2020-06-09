@@ -69,4 +69,240 @@
 
 @media (min-width: 500px) and (max-width: 749px) {
 
+  .main-title {
+    font-size: 30px;
+    padding-top: 5px;
+  }
+
+  .main-description {
+    font-size: 18px;
+    padding-top: 15px;
+  }
+
+  .main-control__start-game-button,
+  .main-control__statistics-button {
+    padding: 10px 0;
+    font-size: 17px;
+  }
+
+  .game-page-navigation__main-button,
+  .game-page-navigation__statistics-button,
+  .statistics-page-navigation__main-button,
+  .statistics-page-navigation__start-game-button {
+    width: 35%;
+    font-size: 15px;
+  }
+
+  .statistics-page-description {
+    padding-top: 50%;
+    font-size: 30px;
+  }
+
+  .start-screen {
+    font-size: 22px;
+  }
+
+  .game-page__level-selection {
+    width: 65%;
+    font-size: 13px;
+  }
+
+  .game-page__level-selection input {
+    font-size: 10px;
+  }
+
+  .hint-button {
+    width: 17%;
+  }
+
+  .level-selection__selection-button {
+    font-size: 13px;
+    width: 22%;
+  }
+
+  .game-page__hints {
+    width: 33%;
+  }
+
+  .game-page__task-line {
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px auto;
+  }
+
+  .game-page__control-buttons {
+    width: 80%;
+  }
+
+  .game-page__i-dont-know-button,
+  .game-page__check-button {
+    width: 30%;
+    font-size: 11px;
+    padding: 7px 0;
+  }
+
+  .game-page__translate {
+    font-size: 15px;
+    padding-top: 20px;
+  }
+
+  .game-page__result-container {
+    height: 45vh;
+  }
+
+  .task-line__word {
+    margin: 5px;
+    font-size: 12px;
+  }
+
+  .result-container__string {
+    font-size: 12px;
+  }
+
+  .result-container__string--word {
+    padding: 0 0.5%;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+
+  .main-title {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  .main-description {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .main-description {
+    width: 95%;
+  }
+
+  .main-description span {
+    padding-bottom: 15px;
+  }
+
+  .main-control {
+    width: 95%;
+  }
+
+  .main-control__start-game-button,
+  .main-control__statistics-button {
+    padding: 5px 0;
+    font-size: 12px;
+  }
+
+  .statistics-page-navigation {
+    width: 95%;
+  }
+
+  .game-page-navigation__main-button,
+  .game-page-navigation__statistics-button,
+  .statistics-page-navigation__main-button,
+  .statistics-page-navigation__start-game-button {
+    width: 45%;
+    font-size: 12px;
+  }
+
+  .statistics-page-description {
+    padding-top: 90px;
+    font-size: 33px;
+  }
+
+  .start-screen {
+    font-size: 15px;
+  }
+
+  .game-page__level-selection {
+    width: 65%;
+    font-size: 13px;
+  }
+
+  .game-page__level-selection input {
+    font-size: 10px;
+  }
+
+  .hint-button {
+    width: 42%;
+    padding-bottom: 2px;
+  }
+
+  .game-page__result-container {
+    margin: 15px auto 0;
+    height: 38vh;
+    width: 100%;
+  }
+
+  .game-page__task-line {
+    margin: 10px auto;
+  }
+
+  .game-page__control-buttons {
+    width: 95%;
+  }
+
+  .game-page__i-dont-know-button, .game-page__check-button {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .game-page__menu {
+    margin-top: 10px;
+  }
+
+  .game-page__level-selection {
+    width: 55%;
+    font-size: 10px;
+  }
+
+  .game-page__level-selection label:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .game-page__level-selection input {
+    font-size: 10px;
+  }
+
+  .level-selection__selection-button {
+    font-size: 9px;
+    width: 60%;
+  }
+
+  .game-page__hints {
+    width: 40%;
+  }
+
+  .fa {
+    font-size: 12px;
+  }
+
+  .game-page__translate {
+    width: 95%;
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  .result-container__string {
+    font-size: 9px;
+  }
+
+  .task-line__word {
+    margin: 3px;
+    font-size: 11px;
+  }
+
+  .result-container__string--word {
+    padding: 0 0.5%;
+  }
+
+  .game-page__task-line {
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px auto;
+  }
+
 }
